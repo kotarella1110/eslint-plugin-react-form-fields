@@ -2,9 +2,11 @@
 
 export = {
   configs: {
-    recommended: import("./configs/recommended"),
+    recommended: import('./configs/recommended'),
   },
   rules: {
-    "example-rule": import("./rules/example-rule")
+    'no-mix-controlled-with-uncontrolled': import(
+      './rules/no-mix-controlled-with-uncontrolled'
+    ),
   },
 };
