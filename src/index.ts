@@ -8,5 +8,6 @@ export = {
     'no-mix-controlled-with-uncontrolled': import(
       './rules/no-mix-controlled-with-uncontrolled'
     ),
+    'no-only-value-prop': import('./rules/no-only-value-prop'),
   },
 };
