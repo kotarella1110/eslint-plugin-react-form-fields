@@ -32,7 +32,8 @@
     "eslint": ">=5.16.0"
   },
   "dependencies": {
-    "@typescript-eslint/experimental-utils": "^4.20.0"
+    "@typescript-eslint/experimental-utils": "^4.20.0",
+    "jsx-ast-utils": "^3.2.0"
   },
   "devDependencies": {
     "@types/eslint": "^7.2.8",
@@ -52,7 +53,7 @@
   },
   "lint-staged": {
     "*.{js,ts}": [
-      "lint --fix",
+      "eslint --fix",
       "prettier --write"
     ],
     "*.{json,yaml,md}": [

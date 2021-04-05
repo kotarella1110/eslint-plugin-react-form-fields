@@ -76,11 +76,12 @@ See also [Configuring ESLint](https://eslint.org/docs/user-guide/configuring).
 ## Rules
 
 <!--RULE_TABLE_BEGIN-->
-### Stylistic Issues
 
-| Rule ID | Description |    |
-|:--------|:------------|:--:|
-| [react-form-fields/example-rule](./docs/rules/example-rule.md) | An example rule. | ⭐️ |
+### Possible Errors
+
+| Rule ID                                                                                                      | Description      |     |
+| :----------------------------------------------------------------------------------------------------------- | :--------------- | :-: |
+| [react-form-fields/no-mix-controlled-with-uncontrolled](./docs/rules/no-mix-controlled-with-uncontrolled.md) | (no description) | ⭐️ |
 
 <!--RULE_TABLE_END-->
 
