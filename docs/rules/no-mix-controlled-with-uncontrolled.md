@@ -1,5 +1,7 @@
 # react-form-fields/no-mix-controlled-with-uncontrolled
 
+> Forbid to specify both value/checked and defaultValue/defaultChecked props to form fields
+>
 > - ⭐️ This rule is included in `plugin:react-form-fields/recommended` preset.
 
 Form elements must be either controlled or uncontrolled (specify either the `value`/`checked` prop, or the `defaultValue`/`defaultChecked` prop, but not both). Decide between using a controlled or uncontrolled form element and remove one of these props.

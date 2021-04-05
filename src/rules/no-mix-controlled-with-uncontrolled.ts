@@ -12,7 +12,7 @@ const rule: TSESLint.RuleModule<'no-mix-controlled-with-uncontrolled', []> = {
   meta: {
     docs: {
       description:
-        'Forbid certain both value/checked and defaultValue/defaultChecked props on form fields',
+        'Forbid to specify both value/checked and defaultValue/defaultChecked props to form fields',
       category: 'Possible Errors',
       recommended: 'error',
       url: docsUrl('no-mix-controlled-with-uncontrolled'),
