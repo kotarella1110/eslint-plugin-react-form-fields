@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-react-form-fields",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "",
   "engines": {
     "node": ">=8.10.0"
@@ -24,9 +24,12 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
-    "release": "semantic-release",
+    "contributors:add": "all-contributors add",
+    "contributors:generate": "all-contributors generate",
+    "commit": "commit",
     "add-rule": "ts-node scripts/add-rule",
-    "update": "ts-node scripts/update"
+    "update": "ts-node scripts/update",
+    "semantic-release": "semantic-release"
   },
   "peerDependencies": {
     "eslint": ">=5.16.0"
@@ -36,10 +39,16 @@
     "jsx-ast-utils": "^3.2.0"
   },
   "devDependencies": {
+    "@commitlint/cli": "^12.1.1",
+    "@commitlint/config-conventional": "^12.1.1",
+    "@commitlint/prompt-cli": "^12.1.1",
+    "@semantic-release/changelog": "^5.0.1",
+    "@semantic-release/git": "^9.0.0",
     "@types/eslint": "^7.2.8",
     "@types/jest": "^26.0.22",
     "@typescript-eslint/eslint-plugin": "^4.20.0",
     "@typescript-eslint/parser": "^4.20.0",
+    "all-contributors-cli": "^6.20.0",
     "eslint": "^7.23.0",
     "husky": "^6.0.0",
     "jest": "^26.6.3",
@@ -47,6 +56,7 @@
     "npm-run-all": "^4.1.5",
     "prettier": "^2.2.1",
     "rimraf": "^3.0.2",
+    "semantic-release": "^17.4.2",
     "ts-jest": "^26.5.4",
     "ts-node": "^9.1.1",
     "typescript": "^4.2.3"
@@ -62,7 +72,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kotarella1110/eslint-plugin-react-form-fields.git"
+    "url": "https://github.com/kotarella1110/eslint-plugin-react-form-fields.git"
   },
   "keywords": [
     "typescript",
