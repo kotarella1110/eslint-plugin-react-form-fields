@@ -2,12 +2,10 @@
 
 export = {
   configs: {
-    recommended: import('./configs/recommended'),
+    recommended: require('./configs/recommended'),
   },
   rules: {
-    'no-mix-controlled-with-uncontrolled': import(
-      './rules/no-mix-controlled-with-uncontrolled'
-    ),
-    'no-only-value-prop': import('./rules/no-only-value-prop'),
+    'no-mix-controlled-with-uncontrolled': require('./rules/no-mix-controlled-with-uncontrolled'),
+    'no-only-value-prop': require('./rules/no-only-value-prop'),
   },
 };
