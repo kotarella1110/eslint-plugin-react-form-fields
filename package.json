@@ -1,7 +1,7 @@
 {
   "name": "eslint-plugin-react-form-fields",
   "version": "0.0.0-development",
-  "description": "",
+  "description": "React Form Fields specific linting rules for ESLint",
   "engines": {
     "node": ">=8.10.0"
   },
@@ -78,8 +78,11 @@
     "typescript",
     "template",
     "eslint",
-    "eslintplugin",
-    "eslint-plugin"
+    "eslint-plugin",
+    "react",
+    "form",
+    "react-form",
+    "react-form-fields"
   ],
   "author": "Kotaro Sugawara <kotarella1110@gmail.com>",
   "license": "MIT",
