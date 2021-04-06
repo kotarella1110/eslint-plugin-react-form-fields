@@ -1,3 +1,9 @@
+## [1.0.1](https://github.com/kotarella1110/eslint-plugin-react-form-fields/compare/v1.0.0...v1.0.1) (2021-04-06)
+
+### Bug Fixes
+
+- change from dynamic import to require ([#11](https://github.com/kotarella1110/eslint-plugin-react-form-fields/issues/11)) ([33c02c3](https://github.com/kotarella1110/eslint-plugin-react-form-fields/commit/33c02c319d8ffaad793e11d723d3661b2c9f6ab0))
+
 # 1.0.0 (2021-04-06)
 
 ### Bug Fixes
