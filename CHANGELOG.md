@@ -1,3 +1,9 @@
+## [1.0.3](https://github.com/kotarella1110/eslint-plugin-react-form-fields/compare/v1.0.2...v1.0.3) (2021-04-14)
+
+### Bug Fixes
+
+- exclude from no-only-value-prop rule when input type is hidden ([#23](https://github.com/kotarella1110/eslint-plugin-react-form-fields/issues/23)) ([96044cb](https://github.com/kotarella1110/eslint-plugin-react-form-fields/commit/96044cb3e6796838729456b8ec2f879a12ac8198))
+
 ## [1.0.2](https://github.com/kotarella1110/eslint-plugin-react-form-fields/compare/v1.0.1...v1.0.2) (2021-04-13)
 
 ### Bug Fixes
