@@ -23,6 +23,7 @@ new TSESLint.RuleTester(testerConfig).run(ruleName, rule, {
     { code: '<input type="radio" />' },
     { code: '<input readOnly type="radio" checked={true} />' },
     { code: '<input onChange={() => {}} type="radio" checked={true} />' },
+    { code: '<input type="hidden" value="test" />' },
     { code: '<textarea />' },
     { code: '<textarea readOnly value="test" />' },
     { code: '<textarea onChange={() => {}} value="test" />' },

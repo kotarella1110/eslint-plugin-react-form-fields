@@ -1,6 +1,11 @@
 import { TSESLint } from '@typescript-eslint/experimental-utils';
 import { hasProp } from 'jsx-ast-utils';
-import { docsUrl, isCheckboxOrRadioInput, isFormFieldTag } from '../utils';
+import {
+  docsUrl,
+  isCheckboxOrRadioInput,
+  isFormFieldTag,
+  isHiddenInput,
+} from '../utils';
 
 const rule: TSESLint.RuleModule<'no-only-value-prop', []> = {
   meta: {
@@ -21,7 +26,7 @@ const rule: TSESLint.RuleModule<'no-only-value-prop', []> = {
   create: (context) => {
     return {
       JSXElement(node) {
-        if (!isFormFieldTag(node)) {
+        if (!isFormFieldTag(node) || isHiddenInput(node)) {
           return;
         }
         const hasOnChangeProp = hasProp(
