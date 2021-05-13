@@ -1,8 +1,8 @@
-import { JSXElement } from '@typescript-eslint/types/dist/ts-estree';
+import { TSESTree } from '@typescript-eslint/experimental-utils';
 import { getProp, getLiteralPropValue } from 'jsx-ast-utils';
-import { getTagName } from '.';
+import { getTagName } from './getTagName';
 
-export const isCheckboxOrRadioInput = (node: JSXElement): boolean => {
+export const isCheckboxOrRadioInput = (node: TSESTree.JSXElement): boolean => {
   const tagName = getTagName(node);
   const typeProp = getProp(node.openingElement.attributes, 'type');
   const typePropValue = getLiteralPropValue(typeProp);

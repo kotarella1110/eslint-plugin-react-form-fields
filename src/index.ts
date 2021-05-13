@@ -7,5 +7,7 @@ export = {
   rules: {
     'no-mix-controlled-with-uncontrolled': require('./rules/no-mix-controlled-with-uncontrolled'),
     'no-only-value-prop': require('./rules/no-only-value-prop'),
+    'styled-no-mix-controlled-with-uncontrolled': require('./rules/styled-no-mix-controlled-with-uncontrolled'),
+    'styled-no-only-value-prop': require('./rules/styled-no-only-value-prop'),
   },
 };

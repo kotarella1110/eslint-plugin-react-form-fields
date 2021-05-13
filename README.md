@@ -74,10 +74,12 @@ See also [Configuring ESLint](https://eslint.org/docs/user-guide/configuring).
 
 ### Possible Errors
 
-| Rule ID                                                                                                      | Description                                                                               |     |
-| :----------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------- | :-: |
-| [react-form-fields/no-mix-controlled-with-uncontrolled](./docs/rules/no-mix-controlled-with-uncontrolled.md) | Forbid to specify both value/checked and defaultValue/defaultChecked props to form fields | ⭐️ |
-| [react-form-fields/no-only-value-prop](./docs/rules/no-only-value-prop.md)                                   | Forbid to specify only value/checked without onChange and readOnly props to form fields   | ⭐️ |
+| Rule ID                                                                                                                    | Description                                                                               |     |
+| :------------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------- | :-: |
+| [react-form-fields/no-mix-controlled-with-uncontrolled](./docs/rules/no-mix-controlled-with-uncontrolled.md)               | Forbid to specify both value/checked and defaultValue/defaultChecked props to form fields | ⭐️ |
+| [react-form-fields/no-only-value-prop](./docs/rules/no-only-value-prop.md)                                                 | Forbid to specify only value/checked without onChange and readOnly props to form fields   | ⭐️ |
+| [react-form-fields/styled-no-mix-controlled-with-uncontrolled](./docs/rules/styled-no-mix-controlled-with-uncontrolled.md) | Forbid to specify both value/checked and defaultValue/defaultChecked props to form fields |     |
+| [react-form-fields/styled-no-only-value-prop](./docs/rules/styled-no-only-value-prop.md)                                   | Forbid to specify only value/checked without onChange and readOnly props to form fields   |     |
 
 <!--RULE_TABLE_END-->
 
