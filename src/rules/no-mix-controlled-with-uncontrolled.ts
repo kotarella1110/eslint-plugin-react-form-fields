@@ -1,12 +1,10 @@
 import { TSESLint } from '@typescript-eslint/experimental-utils';
 import { hasProp } from 'jsx-ast-utils';
-import {
-  capitalize,
-  docsUrl,
-  getTagName,
-  isCheckboxOrRadioInput,
-  isFormFieldTag,
-} from '../utils';
+import { capitalize } from '../utils/capitalize';
+import { docsUrl } from '../utils/docsUrl';
+import { getTagName } from '../utils/getTagName';
+import { isCheckboxOrRadioInput } from '../utils/isCheckboxOrRadioInput';
+import { isFormFieldTags } from '../utils/isFormFieldTags';
 
 const rule: TSESLint.RuleModule<'no-mix-controlled-with-uncontrolled', []> = {
   meta: {
@@ -28,7 +26,7 @@ const rule: TSESLint.RuleModule<'no-mix-controlled-with-uncontrolled', []> = {
     return {
       JSXElement(node) {
         const tagName = getTagName(node);
-        if (!isFormFieldTag(node)) {
+        if (!isFormFieldTags(node)) {
           return;
         }
         if (isCheckboxOrRadioInput(node)) {

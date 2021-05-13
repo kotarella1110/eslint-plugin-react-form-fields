@@ -47,7 +47,7 @@ new TSESLint.RuleTester(testerConfig).run(
         errors: [{ messageId: 'no-mix-controlled-with-uncontrolled' }],
       },
       {
-        code: '<select type="text" value="test" defaultValue="test" />',
+        code: '<select value="test" defaultValue="test" />',
         errors: [{ messageId: 'no-mix-controlled-with-uncontrolled' }],
       },
     ],

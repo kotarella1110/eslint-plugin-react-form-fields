@@ -1,6 +1,6 @@
-import { JSXElement } from '@typescript-eslint/types/dist/ts-estree';
+import { TSESTree } from '@typescript-eslint/experimental-utils';
 
-export const getTagName = (node: JSXElement): string =>
+export const getTagName = (node: TSESTree.JSXElement): string =>
   node.openingElement.name.type === 'JSXIdentifier'
     ? node.openingElement.name.name
     : '';
