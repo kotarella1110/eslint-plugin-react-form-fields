@@ -12,3 +12,6 @@ updates:
     prefix: fix
     prefix-development: chore
     include: scope
+  labels:
+    - dependencies
+    - automerge
