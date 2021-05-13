@@ -1,6 +1,6 @@
 import { TSESTree } from '@typescript-eslint/experimental-utils';
 
-export type StyledComponents = {
+export type CollectedStyledComponents = {
   [key: string]: {
     name: string;
     tag: string;

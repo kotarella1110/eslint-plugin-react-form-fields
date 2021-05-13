@@ -2,7 +2,7 @@
 
 > Forbid to specify both value/checked and defaultValue/defaultChecked props to form fields
 
-Support styled-components in the no-mix-controlled-with-uncontrolled rule
+Support styled-components in the no-mix-controlled-with-uncontrolled rule.
 
 ## Rule Details
 

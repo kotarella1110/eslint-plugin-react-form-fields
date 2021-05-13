@@ -6,17 +6,17 @@ import {
 import {
   getAttrsProperties,
   getStyledComponentName,
-  isStyled,
-  isStyledFuncComponent,
-  isStyledFuncComponentWithAttrs,
-  isStyledFuncTag,
-  isStyledFuncTagWithAttrs,
-  isStyledWithAttrs,
+  isStyledTags,
+  isCreateStyledComponent,
+  isCreateStyledComponentWithAttrs,
+  isCreateStyledTags,
+  isCreateStyledTagsWithAttrs,
+  isStyledTagsWithAttrs,
 } from './styledJSX';
-import type { StyledComponents } from './types';
+import type { CollectedStyledComponents } from './types';
 
 export const collectStyledComponentData = (
-  styledComponentsDict: StyledComponents
+  styledComponents: CollectedStyledComponents
 ): {
   TaggedTemplateExpression: TSESLint.RuleFunction<TSESTree.TaggedTemplateExpression>;
 } => ({
@@ -25,28 +25,27 @@ export const collectStyledComponentData = (
     if (!scName) return;
     let attrs: TSESTree.Property[] = [];
     let tag = '';
-    // const A = styled.div``
-    if (isStyled(node)) {
+    if (isStyledTags(node)) {
       tag =
         (node.tag.type === AST_NODE_TYPES.MemberExpression &&
           node.tag.property.type === AST_NODE_TYPES.Identifier &&
           node.tag.property.name) ||
         '';
-      styledComponentsDict[scName] = {
+      styledComponents[scName] = {
         name: scName,
         tag,
         attrs,
       };
     }
     // styled('div')``
-    if (isStyledFuncTag(node)) {
+    if (isCreateStyledTags(node)) {
       tag =
         (node.tag.type === AST_NODE_TYPES.CallExpression &&
           node.tag.arguments[0].type === AST_NODE_TYPES.Literal &&
           typeof node.tag.arguments[0].value === 'string' &&
           node.tag.arguments[0].value) ||
         '';
-      styledComponentsDict[scName] = {
+      styledComponents[scName] = {
         name: scName,
         tag,
         attrs,
@@ -54,19 +53,19 @@ export const collectStyledComponentData = (
       return;
     }
     // styled(Component)``
-    if (isStyledFuncComponent(node)) {
+    if (isCreateStyledComponent(node)) {
       const ancestorScName =
         node.tag.type === AST_NODE_TYPES.CallExpression &&
         node.tag.arguments[0].type === AST_NODE_TYPES.Identifier &&
         node.tag.arguments[0].name;
-      if (!ancestorScName || !styledComponentsDict[ancestorScName]) return;
-      tag = styledComponentsDict[ancestorScName].tag;
-      attrs = styledComponentsDict[ancestorScName].attrs;
-      styledComponentsDict[scName] = { name: scName, attrs, tag };
+      if (!ancestorScName || !styledComponents[ancestorScName]) return;
+      tag = styledComponents[ancestorScName].tag;
+      attrs = styledComponents[ancestorScName].attrs;
+      styledComponents[scName] = { name: scName, attrs, tag };
       return;
     }
     // styled.div.attrs(...)``
-    if (isStyledWithAttrs(node)) {
+    if (isStyledTagsWithAttrs(node)) {
       tag =
         (node.tag.type === AST_NODE_TYPES.CallExpression &&
           node.tag.callee.type === AST_NODE_TYPES.MemberExpression &&
@@ -75,15 +74,14 @@ export const collectStyledComponentData = (
           node.tag.callee.object.property.name) ||
         '';
       attrs = getAttrsProperties(node);
-      styledComponentsDict[scName] = {
+      styledComponents[scName] = {
         name: scName,
         tag,
         attrs,
       };
       return;
     }
-    // styled('div').attrs(...)``
-    if (isStyledFuncTagWithAttrs(node)) {
+    if (isCreateStyledTagsWithAttrs(node)) {
       tag =
         (node.tag.type === AST_NODE_TYPES.CallExpression &&
           node.tag.callee.type === AST_NODE_TYPES.MemberExpression &&
@@ -93,7 +91,7 @@ export const collectStyledComponentData = (
           node.tag.callee.object.arguments[0].value) ||
         '';
       attrs = getAttrsProperties(node);
-      styledComponentsDict[scName] = {
+      styledComponents[scName] = {
         name: scName,
         tag,
         attrs,
@@ -101,7 +99,7 @@ export const collectStyledComponentData = (
       return;
     }
     // styled(Component).attrs(...)``
-    if (isStyledFuncComponentWithAttrs(node)) {
+    if (isCreateStyledComponentWithAttrs(node)) {
       const ancestorScName =
         node.tag.type === AST_NODE_TYPES.CallExpression &&
         node.tag.callee.type === AST_NODE_TYPES.MemberExpression &&
@@ -109,12 +107,12 @@ export const collectStyledComponentData = (
         node.tag.callee.object.arguments[0].type ===
           AST_NODE_TYPES.Identifier &&
         node.tag.callee.object.arguments[0].name;
-      if (!ancestorScName || !styledComponentsDict[ancestorScName]) return;
-      tag = styledComponentsDict[ancestorScName].tag;
-      attrs = styledComponentsDict[ancestorScName].attrs.concat(
+      if (!ancestorScName || !styledComponents[ancestorScName]) return;
+      tag = styledComponents[ancestorScName].tag;
+      attrs = styledComponents[ancestorScName].attrs.concat(
         getAttrsProperties(node)
       );
-      styledComponentsDict[scName] = {
+      styledComponents[scName] = {
         name: scName,
         tag,
         attrs,

@@ -2,7 +2,7 @@
 
 > Forbid to specify only value/checked without onChange and readOnly props to form fields
 
-Support styled-components in the no-only-value-prop rule
+Support styled-components in the no-only-value-prop rule.
 
 ## Rule Details
 

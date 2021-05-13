@@ -3,12 +3,12 @@ import {
   AST_NODE_TYPES,
 } from '@typescript-eslint/experimental-utils';
 
-function getBaseNode({ loc, range }: TSESTree.Node): TSESTree.BaseNode {
+const getBaseNode = ({ loc, range }: TSESTree.Node): TSESTree.BaseNode => {
   return {
     loc,
     range,
   };
-}
+};
 
 export const propertyToJSXAttribute = (
   node: TSESTree.Property

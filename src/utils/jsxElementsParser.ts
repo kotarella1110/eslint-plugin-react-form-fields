@@ -5,7 +5,7 @@ import {
 } from '@typescript-eslint/experimental-utils';
 import { getAsPropValue } from './getAsPropValue';
 import { propertyToJSXAttribute } from './propertyToJSXAttribute';
-import type { StyledComponents } from './types';
+import type { CollectedStyledComponents } from './types';
 
 export const jsxElementsParser =
   (
@@ -13,14 +13,14 @@ export const jsxElementsParser =
     context: Readonly<TSESLint.RuleContext<any, any>>,
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     rule: TSESLint.RuleModule<any, any>,
-    styledComponents: StyledComponents
+    collectedStyledComponents: CollectedStyledComponents
   ) =>
   (node: TSESTree.JSXElement): void => {
     if (node.openingElement.name.type !== AST_NODE_TYPES.JSXIdentifier) {
       return;
     }
     const originalName = node.openingElement.name.name;
-    const styledComponent = styledComponents[originalName];
+    const styledComponent = collectedStyledComponents[originalName];
     if (styledComponent) {
       const { tag, attrs } = styledComponent;
       const originalNodeAttr = node.openingElement.attributes;
