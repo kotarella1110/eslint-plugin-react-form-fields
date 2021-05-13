@@ -1,3 +1,9 @@
+# [1.1.0](https://github.com/kotarella1110/eslint-plugin-react-form-fields/compare/v1.0.4...v1.1.0) (2021-05-13)
+
+### Features
+
+- support styled-components ([#45](https://github.com/kotarella1110/eslint-plugin-react-form-fields/issues/45)) ([137c70f](https://github.com/kotarella1110/eslint-plugin-react-form-fields/commit/137c70fba1c007996ba77102dd2787969e4ef696))
+
 ## [1.0.4](https://github.com/kotarella1110/eslint-plugin-react-form-fields/compare/v1.0.3...v1.0.4) (2021-05-04)
 
 ### Bug Fixes
