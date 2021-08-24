@@ -35,7 +35,7 @@
     "eslint": ">=5.16.0"
   },
   "dependencies": {
-    "@typescript-eslint/experimental-utils": "^4.29.2",
+    "@typescript-eslint/experimental-utils": "^4.29.3",
     "jsx-ast-utils": "^3.2.0"
   },
   "devDependencies": {
