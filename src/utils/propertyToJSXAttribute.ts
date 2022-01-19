@@ -3,8 +3,13 @@ import {
   AST_NODE_TYPES,
 } from '@typescript-eslint/experimental-utils';
 
-const getBaseNode = ({ loc, range }: TSESTree.Node): TSESTree.BaseNode => {
+const getBaseNode = ({
+  type,
+  loc,
+  range,
+}: TSESTree.Node): TSESTree.BaseNode => {
   return {
+    type,
     loc,
     range,
   };
@@ -15,8 +20,10 @@ export const propertyToJSXAttribute = (
 ): TSESTree.JSXAttribute => {
   const { key, value } = node;
   return {
+    ...getBaseNode(node),
     type: AST_NODE_TYPES.JSXAttribute,
     name: {
+      ...getBaseNode(key),
       type: AST_NODE_TYPES.JSXIdentifier,
       name:
         key.type === AST_NODE_TYPES.Identifier
@@ -26,7 +33,6 @@ export const propertyToJSXAttribute = (
             ? key.value
             : ''
           : '',
-      ...getBaseNode(key),
     },
     value:
       value.type === AST_NODE_TYPES.AssignmentPattern ||
@@ -38,10 +44,9 @@ export const propertyToJSXAttribute = (
         : value.type === AST_NODE_TYPES.Literal
         ? value
         : {
+            ...getBaseNode(value),
             type: AST_NODE_TYPES.JSXExpressionContainer,
             expression: value,
-            ...getBaseNode(value),
           },
-    ...getBaseNode(node),
   };
 };
