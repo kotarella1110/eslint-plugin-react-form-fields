@@ -10,7 +10,6 @@ const rule: TSESLint.RuleModule<'no-only-value-prop', []> = {
     docs: {
       description:
         'Forbid to specify only value/checked without onChange and readOnly props to form fields',
-      category: 'Possible Errors',
       recommended: 'error',
       url: docsUrl('no-only-value-prop'),
     },
