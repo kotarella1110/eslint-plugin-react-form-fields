@@ -67,4 +67,4 @@ const rule: TSESLint.RuleModule<'no-only-value-prop', []> = {
   },
 };
 
-export = rule;
+export default rule;

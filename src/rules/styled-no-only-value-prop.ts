@@ -16,4 +16,4 @@ const styledRule: TSESLint.RuleModule<'no-only-value-prop', []> = {
   },
 };
 
-export = makeRule(styledRule);
+export default makeRule(styledRule);

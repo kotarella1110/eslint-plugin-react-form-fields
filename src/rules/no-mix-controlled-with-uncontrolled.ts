@@ -73,4 +73,4 @@ const rule: TSESLint.RuleModule<'no-mix-controlled-with-uncontrolled', []> = {
   },
 };
 
-export = rule;
+export default rule;

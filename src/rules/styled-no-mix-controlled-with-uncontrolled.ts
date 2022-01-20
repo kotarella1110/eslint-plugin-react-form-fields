@@ -19,4 +19,4 @@ const styledRule: TSESLint.RuleModule<
   },
 };
 
-export = makeRule(styledRule);
+export default makeRule(styledRule);
