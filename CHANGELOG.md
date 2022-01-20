@@ -1,3 +1,18 @@
+## [1.1.6](https://github.com/kotarella1110/eslint-plugin-react-form-fields/compare/v1.1.5...v1.1.6) (2022-01-20)
+
+### Bug Fixes
+
+- **deps:** bump @typescript-eslint/experimental-utils ([#100](https://github.com/kotarella1110/eslint-plugin-react-form-fields/issues/100)) ([77aa51e](https://github.com/kotarella1110/eslint-plugin-react-form-fields/commit/77aa51ed5b26a0aa9911ba146086527ae95c333b))
+- **deps:** bump @typescript-eslint/experimental-utils ([#107](https://github.com/kotarella1110/eslint-plugin-react-form-fields/issues/107)) ([c9dd109](https://github.com/kotarella1110/eslint-plugin-react-form-fields/commit/c9dd109c0710fbba6df64cc67831fe1b779c6e6e))
+- **deps:** bump @typescript-eslint/experimental-utils ([#117](https://github.com/kotarella1110/eslint-plugin-react-form-fields/issues/117)) ([da244be](https://github.com/kotarella1110/eslint-plugin-react-form-fields/commit/da244be81c4d72c7ae10b0ae9a16e93c5630d3fb))
+- **deps:** bump @typescript-eslint/experimental-utils ([#123](https://github.com/kotarella1110/eslint-plugin-react-form-fields/issues/123)) ([11cc931](https://github.com/kotarella1110/eslint-plugin-react-form-fields/commit/11cc93175d85214be1759466b602d958550f17ba))
+- **deps:** bump @typescript-eslint/experimental-utils ([#133](https://github.com/kotarella1110/eslint-plugin-react-form-fields/issues/133)) ([71dc84f](https://github.com/kotarella1110/eslint-plugin-react-form-fields/commit/71dc84ffc4a403cf91660cddd5c439d994aa5c7c))
+- **deps:** bump @typescript-eslint/experimental-utils ([#76](https://github.com/kotarella1110/eslint-plugin-react-form-fields/issues/76)) ([76ba339](https://github.com/kotarella1110/eslint-plugin-react-form-fields/commit/76ba339930448e53143c78899457396e1258e12e))
+- **deps:** bump @typescript-eslint/experimental-utils ([#82](https://github.com/kotarella1110/eslint-plugin-react-form-fields/issues/82)) ([b745f22](https://github.com/kotarella1110/eslint-plugin-react-form-fields/commit/b745f22c1a3e98b4e34319ec744c423b8739bc4a))
+- **deps:** bump @typescript-eslint/experimental-utils ([#86](https://github.com/kotarella1110/eslint-plugin-react-form-fields/issues/86)) ([5b61be9](https://github.com/kotarella1110/eslint-plugin-react-form-fields/commit/5b61be9bb2af2ea0500008ce58ec374658bf4bd6))
+- **deps:** bump @typescript-eslint/experimental-utils ([#96](https://github.com/kotarella1110/eslint-plugin-react-form-fields/issues/96)) ([ec98e15](https://github.com/kotarella1110/eslint-plugin-react-form-fields/commit/ec98e15b25e1d0024db0f52a1cd004afd72997e8))
+- **utils:** fix propertyToJSXAttribute type error ([#183](https://github.com/kotarella1110/eslint-plugin-react-form-fields/issues/183)) ([d1412b9](https://github.com/kotarella1110/eslint-plugin-react-form-fields/commit/d1412b960baf4664d3e64ca721bd3803f9e7b6da))
+
 ## [1.1.5](https://github.com/kotarella1110/eslint-plugin-react-form-fields/compare/v1.1.4...v1.1.5) (2021-06-15)
 
 ### Bug Fixes
