@@ -5,7 +5,8 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [10.x, 12.x]
+        node-version: [14.x, 16.x]
+        eslint-version: [5, 6, 7, 8]
     steps:
       - uses: actions/checkout@v2
       - name: Use Node.js ${{ matrix.node-version }}
@@ -16,6 +17,8 @@ jobs:
         run: npm ci
       - name: Lint
         run: npm run lint
+      - name: Install ESLint v${{ matrix.eslint-version }}
+        run: npm install --no-save --force eslint@${{ matrix.eslint-version }}
       - name: Test
         run: npm test
         env:

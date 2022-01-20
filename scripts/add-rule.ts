@@ -54,12 +54,6 @@ const rule: TSESLint.RuleModule<"", []> = {
     docs: {
       // TODO: write the rule summary.
       description: "",
-
-      // TODO: choose the rule category.
-      category: "Possible Errors",
-      category: "Best Practices",
-      category: "Stylistic Issues",
-
       recommended: false,
       url: "",
     },
