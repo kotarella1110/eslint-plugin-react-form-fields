@@ -1,3 +1,9 @@
+## [1.2.2](https://github.com/kotarella1110/eslint-plugin-react-form-fields/compare/v1.2.1...v1.2.2) (2022-02-01)
+
+### Bug Fixes
+
+- **deps:** bump @typescript-eslint/experimental-utils ([#205](https://github.com/kotarella1110/eslint-plugin-react-form-fields/issues/205)) ([8e24f27](https://github.com/kotarella1110/eslint-plugin-react-form-fields/commit/8e24f27629f14831fc926971fd67a6ae34e918ff))
+
 ## [1.2.1](https://github.com/kotarella1110/eslint-plugin-react-form-fields/compare/v1.2.0...v1.2.1) (2022-01-25)
 
 ### Bug Fixes
