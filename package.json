@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-react-form-fields",
-  "version": "1.2.5",
+  "version": "1.2.6",
   "description": "React Form Fields specific linting rules for ESLint",
   "engines": {
     "node": ">=8.10.0"
