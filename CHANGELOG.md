@@ -1,3 +1,9 @@
+## [1.2.16](https://github.com/kotarella1110/eslint-plugin-react-form-fields/compare/v1.2.15...v1.2.16) (2022-05-02)
+
+### Bug Fixes
+
+- **deps:** bump jsx-ast-utils from 3.2.2 to 3.3.0 ([#275](https://github.com/kotarella1110/eslint-plugin-react-form-fields/issues/275)) ([4420312](https://github.com/kotarella1110/eslint-plugin-react-form-fields/commit/44203123928e6cd36574f2ff73d6a4e83083d856))
+
 ## [1.2.15](https://github.com/kotarella1110/eslint-plugin-react-form-fields/compare/v1.2.14...v1.2.15) (2022-04-26)
 
 ### Bug Fixes
