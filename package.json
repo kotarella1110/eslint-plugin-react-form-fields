@@ -45,7 +45,7 @@
     "@semantic-release/changelog": "^5.0.1",
     "@semantic-release/git": "^9.0.1",
     "@types/eslint": "^8.4.1",
-    "@types/jest": "^27.4.1",
+    "@types/jest": "^27.5.0",
     "@typescript-eslint/eslint-plugin": "^5.22.0",
     "@typescript-eslint/parser": "^5.22.0",
     "all-contributors-cli": "^6.20.0",
