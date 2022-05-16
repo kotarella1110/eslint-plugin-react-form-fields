@@ -39,7 +39,7 @@
     "jsx-ast-utils": "^3.3.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^16.2.4",
+    "@commitlint/cli": "^17.0.0",
     "@commitlint/config-conventional": "^17.0.0",
     "@commitlint/prompt-cli": "^16.2.4",
     "@semantic-release/changelog": "^5.0.1",
