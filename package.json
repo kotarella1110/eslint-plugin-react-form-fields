@@ -36,7 +36,7 @@
   },
   "dependencies": {
     "@typescript-eslint/experimental-utils": "^5.30.5",
-    "jsx-ast-utils": "^3.3.1"
+    "jsx-ast-utils": "^3.3.2"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.0.3",
