@@ -48,7 +48,7 @@
     "@types/jest": "^27.5.0",
     "@typescript-eslint/eslint-plugin": "^5.39.0",
     "@typescript-eslint/parser": "^5.39.0",
-    "all-contributors-cli": "^6.23.1",
+    "all-contributors-cli": "^6.24.0",
     "camelcase": "^7.0.0",
     "eslint": "^8.25.0",
     "husky": "^8.0.1",
