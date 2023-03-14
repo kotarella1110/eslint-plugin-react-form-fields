@@ -44,7 +44,7 @@
     "@commitlint/prompt-cli": "^17.4.4",
     "@semantic-release/changelog": "^6.0.2",
     "@semantic-release/git": "^10.0.1",
-    "@types/eslint": "^8.21.1",
+    "@types/eslint": "^8.21.2",
     "@types/jest": "^27.5.0",
     "@typescript-eslint/eslint-plugin": "^5.55.0",
     "@typescript-eslint/parser": "^5.54.1",
